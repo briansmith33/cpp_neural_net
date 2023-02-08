@@ -2,6 +2,7 @@
 #include "activation.cpp"
 #include "neuron.cpp"
 
+
 Dense::Dense() {}
 
 Dense::Dense(int nInputs, int nNeurons, std::string a) {
@@ -46,3 +47,12 @@ std::vector<std::vector<double>> Dense::_initializeWeights(std::tuple<int, int> 
     return tensor;
 }
 
+void Dense::print() {
+    std::cout << "Dense" << std::endl;
+}
+
+Flatten::Flatten() {}
+
+void Flatten::print() {
+    std::cout << "Flatten" << std::endl;
+}
